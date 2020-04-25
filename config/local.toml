@@ -1,0 +1,7 @@
+[application]
+serviceId = "ms-inventory"
+port      = 8000
+
+[mongoose.inventory]
+uri = "mongodb://localhost:27017/inventory"
+
