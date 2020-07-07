@@ -1,18 +1,16 @@
 # Run from Node 10
-FROM node:10
+FROM node:latest
 
 # Create app directory
-RUN mkdir -p /app
-WORKDIR /app
+WORKDIR /usr/src/app
 
 # Install app dependencies
-COPY package*.json /app/
+COPY package*.json ./
 
 RUN npm install
 # Bundle app source
-COPY . /app
-RUN npm run build
+COPY . .
 # Make port 3000 available to the world outside this container
-EXPOSE 3000
+EXPOSE 8080
 
-ENTRYPOINT npm start
+CMD [ "node", "src/app.js" ]

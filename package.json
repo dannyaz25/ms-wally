@@ -1,5 +1,5 @@
 {
- "name": "ms-inventory",
+ "name": "ms-wally",
  "version": "1.0.0",
  "dependencies": {
   "@iarna/toml": "^2.2.5",
@@ -10,7 +10,9 @@
   "express-laravel-router": "^1.4.1",
   "method-override": "^2.1.2",
   "mongoose": "^5.8.13",
-  "node-dev": "^4.0.0"
+  "node-dev": "^4.0.0",
+  "print-bst": "^2.0.0",
+  "print-tree": "^0.1.5"
  },
  "scripts": {
   "dev": "DL4K=1 NODE_ENV=local node-dev ./src/app.js",

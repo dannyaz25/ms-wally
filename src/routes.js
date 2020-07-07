@@ -3,8 +3,8 @@ const IndexController = require('./controllers/index');
 
 const router = express.Router();
 
-router.get('/inventory/get-items', IndexController.getItems);
-router.post('/inventory/create-items', IndexController.create);
-
+router.get('/collatz/get-all-tree', IndexController.getItems);
+router.post('/collatz/create-tree', IndexController.create);
+router.post('/collatz/generate-depth', IndexController.generateDepth);
 
 module.exports = router;
