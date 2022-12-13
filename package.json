@@ -6,7 +6,7 @@
   "body-parser": "^1.5.1",
   "debug": "^4.1.1",
   "eslint-config-airbnb": "^18.1.0",
-  "express": "^4.7.1",
+  "express": "^4.17.3",
   "express-laravel-router": "^1.4.1",
   "method-override": "^2.1.2",
   "mongoose": "^5.8.13",
